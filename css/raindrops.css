@@ -1,0 +1,81 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+box-sizing: border-box;
+-moz-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body{
+  background-color: rgb(47, 47, 47);
+}
+
+.loaderIcon{
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+}
+
+.loaderIcon #circles{
+  height: 300px;
+  overflow: visible;
+}
+
+#one.animate,
+#two.animate,
+#three.animate,
+#four.animate,
+#five.animate,
+#six.animate,
+#seven.animate,
+#eight.animate{
+  animation: outer 4s infinite ease-in-out;
+  stroke-width: 0px;
+}
+
+#oneo.animate,
+#twoo.animate,
+#threeo.animate,
+#fouro.animate,
+#fiveo.animate,
+#sixo.animate,
+#seveno.animate,
+#eighto.animate{
+  animation: outer 4s infinite ease-in-out;
+  stroke-width: 0px;
+}
+
+
+@keyframes outer{
+  0%{
+    stroke-width: 0px;
+  }
+  50%{
+    stroke-width: 180px;
+  }
+  100%{
+    stroke-width: 0px;
+  }
+}
+
+@keyframes inner{
+  0%{
+    stroke-width: 0px;
+  }
+  50%{
+    stroke-width: 180px;
+  }
+  100%{
+    stroke-width: 0px;
+  }
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 542 542">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4d4d4d;
+      }
+
+      .cls-2 {
+        fill: #333;
+      }
+
+      .cls-3 {
+        fill: aqua;
+      }
+    </style>
+  </defs>
+  <g id="circle">
+    <circle id="outer" class="cls-1" cx="271" cy="271" r="271"/>
+    <circle id="inner" class="cls-2" cx="271" cy="271" r="178"/>
+  </g>
+  <g id="Dots">
+    <circle id="e16" class="cls-3" cx="186.36" cy="482.72" r="5"/>
+    <circle id="e15" class="cls-3" cx="273" cy="499" r="5"/>
+    <circle id="e14" class="cls-3" cx="360.86" cy="480.56" r="5"/>
+    <circle id="e13" class="cls-3" cx="433.63" cy="430.81" r="5"/>
+    <circle id="e12" class="cls-3" cx="482.72" cy="355.64" r="5"/>
+    <circle id="e11" class="cls-3" cx="499" cy="269" r="5"/>
+    <circle id="e10" class="cls-3" cx="480.56" cy="181.14" r="5"/>
+    <circle id="e9" class="cls-3" cx="430.81" cy="108.37" r="5"/>
+    <ellipse id="e8" class="cls-3" cx="355.64" cy="59.28" rx="5" ry="5"/>
+    <circle id="e7" class="cls-3" cx="269" cy="43" r="5"/>
+    <circle id="e6" class="cls-3" cx="181.14" cy="61.44" r="5"/>
+    <circle id="e5" class="cls-3" cx="108.37" cy="111.19" r="5"/>
+    <ellipse id="e4" class="cls-3" cx="59.28" cy="186.36" rx="5" ry="5"/>
+    <circle id="e3" class="cls-3" cx="43" cy="273" r="5"/>
+    <circle id="e2" class="cls-3" cx="61.44" cy="360.86" r="5"/>
+    <circle id="e1" class="cls-3" cx="111.19" cy="433.63" r="5"/>
+  </g>
+</svg>

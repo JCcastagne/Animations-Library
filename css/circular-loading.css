@@ -1,0 +1,99 @@
+/* Created by J-C Castagne @ GitHub: https://github.com/JCcastagne */
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+box-sizing: border-box;
+-moz-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+background-color: rgb(37 , 37, 37);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+#loadingIcon{
+  width: 250px;
+}
+
+#outer{
+  fill: transparent;
+}
+
+/** animations **/
+
+svg{
+  animation: rotate 6s 1.5s cubic-bezier(.75,-0.5,0,1.75) infinite;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
+#inner{
+  fill: transparent;
+  stroke-width: 5px;
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-dasharray: 1118.407;
+  stroke-dashoffset: 0px;
+  animation: inner 3s linear infinite;
+}
+
+@keyframes inner{
+  0%{
+    stroke-dashoffset: -1118.407px;
+  }
+  100%{
+    stroke-dashoffset: 1118.407px;
+  }
+}
+
+.animate{
+  stroke-width: 0px;
+  stroke: rgb(1,255,255);
+  animation: animate 1.5s 0.7s cubic-bezier(.74,0,0,1.01) infinite;
+}
+
+@keyframes animate{
+  0%{
+    stroke-width: 0px;
+  }
+  50%{
+    stroke-width: 35px;
+  }
+  100%{
+    stroke-width: 0px;
+  }
+}
+
+/** animations end **/
+
+svg{
+  transition: all 0.5s linear;
+}
+
+svg:hover{
+  border-radius: 1000px;
+  box-shadow: inset 0 0 50px rgba(78, 255, 255, 0.25), 0 0 50px rgba(120, 255, 255, 0.25);
+}
