@@ -11,3 +11,6 @@ function animate() {
   })
 
 }
+
+//J-C Castagne - Raindrops
+//Github @ https://github.com/JCcastagne
